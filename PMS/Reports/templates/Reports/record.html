@@ -1,0 +1,65 @@
+{% load static %}
+
+<html>
+<head>
+<title>
+Registeration Form
+</title>
+    <link rel="stylesheet" href="{% static 'Reports/record.css'%}">
+</head>
+<body>
+
+<div style="background-color:black;text-align:"center">
+
+<font face="Algerian" size=6 color="#f8f8ff"> <big><big>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp
+&nbsp
+Medwill Cares</big></big></font>
+<font face="times new roman" size=4 color="#f8f8ff"></font>
+</div>
+
+
+
+
+
+<div class="bg-img">
+    {% for k in sr %}
+  <form action="/action_page.php" class="container" method="POST">
+    <h1>Patient Registeration</h1>
+
+ <label for=" Name"><b>Name</b></label>
+      <br>
+    {{ k.name }}
+      <br>
+
+    <label for="email"><b>Email</b></label>
+      <br>
+      {{ k.email }}
+      <br>
+<label for="gender"><b>Gender</b></label>
+      <br>
+      {{ k.gender }}
+
+<br>
+<label for="age"><b>Age</b></label>
+      <br>
+      {{ k.age }}
+      <br>
+<label for="Doctor"><b>Doctor</b></label>
+      <br>
+      {{ k.doctor }}
+      <br>
+<label for="Medical History"><b>Medical History</b></label>
+      <br>
+      {{ k.previousHistory }}
+
+      <br>
+
+    <button type="submit" class="btn">Register</button>
+
+  </form>
+</div>
+{% endfor %}
+
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+ <!DOCTYPE html>
+{% load static %}
+
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'PMS/home.css'%}">
+<style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color:#696969;
+}
+
+.navbar a.active {
+  background-color:#2F4F4F;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.bg-img {
+  /* The image used */
+  background-image: url("{% static 'download.jpg' %}");}
+</style>
+<body>
+
+
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+<br>
+
+
+<div style="background-color:black;text-align:left"><font face="Times New Roman" size=4 color="white"><marquee>
+Welcome to Medwill Cares. We strive 24-7 for the survival of our people. Feel free to ask for help.
+</marquee></font></div>
+<br>
+<!....................................................................................................................>
+
+<title>
+ Home page
+</title>
+<link rel="stylesheet" href="{% static 'PMS/home.css'%}">
+</head>
+</body>
+
+
+
+
+
+<div class="bg-img">
+  <form action="report" class="container" method="POST">
+      {% csrf_token %}
+    <h1>Login Form</h1>
+
+ <label for=" First Name"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="username" required>
+
+ <label for="last Name"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="Last Name" required>
+
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter your Email" name="email" required>
+
+    <label for="psw"><b>ID</b></label>
+    <input type="password" placeholder="Enter your ID" name="id" required>
+
+
+
+
+    <button type="submit" class="btn">Login</button>
+
+  </form>
+</div>
+<!..............................................................................................................>
+<br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <i class="fa fa-user"></i>
+      11+
+     Collaborations
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <i class="fa fa-check"></i>
+      55+
+      Projects
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <i class="fa fa-smile-o"></i>
+      100+
+     Contented Doctors
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <i class="fa fa-coffee"></i>
+      100+
+      Partnerships
+    </div>
+  </div>
+</div>
+<!......................................................................................................................>
+
+
+</body>
+</html>

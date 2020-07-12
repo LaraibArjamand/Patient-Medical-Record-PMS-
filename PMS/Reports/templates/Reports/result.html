@@ -1,0 +1,115 @@
+
+
+<html>
+<head>
+<title>
+Courses
+</title>
+</head>
+<>
+<h1>
+Patient Medical Records
+</h1>
+
+<form name="Medical Records" method="post" action="anberarif999@gmail.com">
+<div class="patient">
+    {% for k in sr%}
+<table >
+
+<tr align="left">
+<td><b>
+ FIRST NAME </b> &nbsp&nbsp&nbsp
+{{ k.name }}
+</tr>
+
+<tr align="left">
+<td><b>
+<br><br>
+LAST NAME </b> &nbsp&nbsp&nbsp
+<input tye="text">
+</tr>
+&nbsp&nbsp&nbsp
+
+<tr align="left">
+<td>
+<br><br><b>
+ AGE</b> &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp
+{{ k.age }}</tr>
+
+<tr align="left">
+<td>
+<br><br>
+<b>GENDER</b>  &nbsp&nbsp&nbsp
+
+{{ k.gender }}
+</tr>
+
+<tr align="left">
+<td><b>
+<br><br>
+ADDRESS </b> &nbsp&nbsp&nbsp &nbsp&nbsp
+{{ k.address }}</tr>
+
+<tr>
+<td align="left">
+<br><br><br><b>
+
+PHONE NUMBER </b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp {{ k.phone }}
+
+</select>
+</tr>
+
+<tr align="left">
+<td>
+<br><br><b>
+DISEASE</b> &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp
+
+{{ k.disease }}
+
+</select>
+
+</tr>
+
+<tr align="left">
+<td>
+<br><br><b>
+MEDICAL HISTORY </b> &nbsp&nbsp&nbsp
+
+{{ k.previousHistory }}</tr>
+
+<tr align="left">
+<td><b>
+<br><br>
+DOCTOR </b> &nbsp&nbsp&nbsp &nbsp&nbsp
+{{ k.doctor }}</tr>
+
+
+
+
+
+
+<tr align="left">
+<td>
+<br><br>
+
+</tr>
+
+<tr align="left">
+<td>
+<br><br>
+<input type="Submit">
+</tr>
+<input type="FILE">
+</table>
+    {% endfor%}
+</div>
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
