@@ -2,7 +2,6 @@
 {% load static %}
 
 <html>
-
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'PMS/home.css'%}">
@@ -46,9 +45,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   /* The image used */
   background-image: url("{% static 'download.jpg' %}");}
 </style>
+
 <body>
-
-
 <div class="navbar">
   <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
   <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
@@ -56,7 +54,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
 </div>
 <br>
-
 
 <div style="background-color:black;text-align:left"><font face="Times New Roman" size=4 color="white"><marquee>
 Welcome to Medwill Cares. We strive 24-7 for the survival of our people. Feel free to ask for help.
@@ -70,22 +67,22 @@ Welcome to Medwill Cares. We strive 24-7 for the survival of our people. Feel fr
 <link rel="stylesheet" href="{% static 'PMS/home.css'%}">
 </head>
 </body>
-
-
-
-
-
+    {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} m-2" id="msg" role="error">
+        {{ message}}
+    </div>
+    {% endfor %}
+</ul>
+{% endif %}
 <div class="bg-img">
   <form action="report" class="container" method="POST">
       {% csrf_token %}
     <h1>Login Form</h1>
 
- <label for=" First Name"><b>First Name</b></label>
-    <input type="text" placeholder="Enter First Name" name="username" required>
-
- <label for="last Name"><b>Last Name</b></label>
-    <input type="text" placeholder="Enter Last Name" name="Last Name" required>
-
+ <label for=" Name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="username" required>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter your Email" name="email" required>
@@ -93,14 +90,14 @@ Welcome to Medwill Cares. We strive 24-7 for the survival of our people. Feel fr
     <label for="psw"><b>ID</b></label>
     <input type="password" placeholder="Enter your ID" name="id" required>
 
-
-
-
-    <button type="submit" class="btn">Login</button>
-
+      <button type="submit" class="btn">Login</button>
   </form>
+
+
 </div>
+
 <!..............................................................................................................>
+
 <br><br>
 <div class="row">
   <div class="column">
