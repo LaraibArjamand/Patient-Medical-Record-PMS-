@@ -17,8 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 from django.conf.urls import include,url
+from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', TemplateView.as_view(template_name='PMS/home.html'), name='home'),
     url('', include('Reports.urls')),
 ]

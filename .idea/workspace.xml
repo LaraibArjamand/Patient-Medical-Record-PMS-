@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b57a2ce8-997b-4fba-b5a6-c60b83b17aec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PMS/Reports/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/PMS/Reports/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PMS/Reports/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/PMS/Reports/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMS/PMS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/PMS/PMS/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,34 +13,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PMS/Reports/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PMS/Reports/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PMS/PMS/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state relative-caret-position="306">
+              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding>
+                <element signature="e#627#659#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PMS/Reports/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
+            <state relative-caret-position="510">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -75,11 +54,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PMS/PMS/urls.py" />
         <option value="$PROJECT_DIR$/PMS/PMS/templates/PMS/home.html" />
         <option value="$PROJECT_DIR$/PMS/PMS/static/PMS/home.css" />
         <option value="$PROJECT_DIR$/PMS/Reports/models.py" />
         <option value="$PROJECT_DIR$/PMS/Reports/views.py" />
+        <option value="$PROJECT_DIR$/PMS/PMS/urls.py" />
       </list>
     </option>
   </component>
@@ -103,6 +82,27 @@
             <path>
               <item name="project-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-1" type="462c0819:PsiDirectoryNode" />
+              <item name="PMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-1" type="462c0819:PsiDirectoryNode" />
+              <item name="PMS" type="462c0819:PsiDirectoryNode" />
+              <item name="PMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-1" type="462c0819:PsiDirectoryNode" />
+              <item name="PMS" type="462c0819:PsiDirectoryNode" />
+              <item name="PMS" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-1" type="462c0819:PsiDirectoryNode" />
+              <item name="PMS" type="462c0819:PsiDirectoryNode" />
+              <item name="PMS" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="PMS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -218,7 +218,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16369048" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16369048" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -288,27 +288,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PMS/PMS/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PMS/PMS/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PMS/Reports/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -321,12 +304,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PMS/Reports/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PMS/Reports/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
+        <state relative-caret-position="461">
           <caret line="84" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMS/PMS/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="e#627#659#0" expanded="true" />
           </folding>
         </state>
       </provider>
