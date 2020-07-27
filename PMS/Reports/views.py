@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect
 from .models import Patient, Doctor, Admin
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from .forms import CreateNewPatient
 # Create your views here.
 
 
@@ -57,28 +58,17 @@ def search(request):
     return render(request, 'Reports/search.html')
 
 
-@login_required(login_url="http://localhost:8000/")
+#@login_required(login_url="http://localhost:8000/")
 # function to register a new patient(by admin)
 def patient(request):
-    if request.method == 'POST':
-        # getting all the desired attributes
-        name = request.POST['patient_name']
-        age = request.POST['age']
-        pat_gender = request.POST.get('gen', 'Female')
-        address = request.POST['address']
-        number = request.POST['phone']
-        disease = request.POST['disease']
-        history = request.POST['history']
-        Doctor = request.POST['doctor']
-        email = request.POST['email']
+    form = CreateNewPatient(request.POST or None)
+    if form.is_valid():
+        #form = CreateNewPatient()
         # creating patient object
-        b = Patient.objects.create(name=name, age=age, gender=pat_gender, address=address, phone=number,
-                                   disease=disease, previousHistory=history, doctor=Doctor,
-                                   email=email)
-        b.save()            #saving the new patient object
-        messages.success(request, 'No record Found')
-        return HttpResponse("submitted")
+        new_pateint = Patient.objects.create(**form.cleaned_data)
+        form = CreateNewPatient()
+    template_name = 'Reports/register.html'
+    context = {'form':form}
+    return  render(request, template_name, context)
 
-    else:
-        return render(request, 'Reports/register.html')
-        # return HttpResponse("hello")
+    

@@ -24,45 +24,7 @@ Medwill Cares</big></big></font>
   <form action="register" class="container" method="POST">
    {% csrf_token %}
     <h1>Patient Registeration</h1>
-
- <label for=" Name"><b>First Name</b></label>
-    <input type="text" placeholder="Enter Name" name="patient_name" required>
-
-    <label for="email"><b>Email</b></label>
-    <input type="email" placeholder="Enter your Email" name="email" required>
-
-    <label for="psw"><b>ID</b></label>
-    <input type="password" placeholder="Enter your ID" name="psw" required>
-
-   <label for="Address"><b>Address</b></label>
-    <input type="text" placeholder="Enter your address" name="address" required>
-
-   <label for="Phone"><b>Phone</b></label>
-    <input type="numeric" placeholder="Enter your Phone Number" name="phone" required>
-
-<label for="gender"><b>Gender</b></label>
-   <select name="gender">
-    <input type="checkbox"  value="male" name="M"><b> Male</b>
-    <input type="checkbox"  value="Female" name="F"><b> Female</b>
-    <input type="checkbox"  value="Other" name="O"> <b>Other</b>
-
-<br>
-<br>
-<label for="age"><b>Age</b></label>
-    <input type="numeric" placeholder="Enter your age " name="age" required>
-
-
-<label for="Doctor"><b>Doctor</b></label>
-    <input type="text" placeholder="Enter your Doctor's Name" name="doctor" required>
-
-<label for="Disease"><b>Disease</b></label>
-    <input type="text" placeholder="Enter your Disease" name="disease" required>
-
-<label for="Medical History"><b>Medical History</b></label>
-    <input type="text" placeholder="Enter your medical history" name="history" required>
-
-
-
+      {{ form.as_p }}
 
     <button type="submit" class="btn">Register</button>
 
