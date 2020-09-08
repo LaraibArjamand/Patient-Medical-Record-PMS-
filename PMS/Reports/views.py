@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
-from .models import Patient, Doctor, Admin
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib import messages
+from django.views.generic import CreateView
 from django.contrib.auth.decorators import login_required
 from .forms import CreateNewPatient
+from .models import Patient, Doctor, Admin
 # Create your views here.
 
 
@@ -60,7 +61,7 @@ def search(request):
 
 #@login_required(login_url="http://localhost:8000/")
 # function to register a new patient(by admin)
-def patient(request):
+'''def patient(request):
     form = CreateNewPatient(request.POST or None)
     if form.is_valid():
         #form = CreateNewPatient()
@@ -69,6 +70,14 @@ def patient(request):
         form = CreateNewPatient()
     template_name = 'Reports/register.html'
     context = {'form':form}
-    return  render(request, template_name, context)
+    return  render(request, template_name, context)'''
 
+class CreatePatient(CreateView):
+    model = Patient
+    template_name = 'Reports/register.html'
+    success_url = 'register'
+    fields = ['name', 'age',
+              'address', 'email', 'phone',
+              'disease', 'previousHistory', 'doctor',
+              'gender']
     
